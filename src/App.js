@@ -1,10 +1,10 @@
-import Home from "./components/home/home";
+import AppRouter from "./router/router.js";
 
 
 
 function App() {
   return (
-    <Home />
+    <AppRouter />
   );
 }
 
