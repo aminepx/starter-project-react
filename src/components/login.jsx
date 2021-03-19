@@ -35,9 +35,9 @@ export default function Login() {
             </button>
           </div>
           <div className="text-center p-t-90 mt-5">
-            <a className="txt1" href="https://colorlib.com/etc/lf/Login_v3/index.html#">
+           
               <Link to="/register">Register</Link>
-            </a>
+          
           </div>
         </form>
       </div>

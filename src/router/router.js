@@ -9,11 +9,13 @@ import LmsPages from "../pages/lms-pages";
 import LoginPage from "./../pages/login/login-page";
 import Error from "../pages/error-page";
 import RegisterPage from "./../pages/register/register-pages";
+import { AuthProvider } from "../shared/auth/auth-context";
 
 export default function AppRouter() {
   return (
+    
     <Router>
- 
+      <AuthProvider>
         <Switch>
            <Route exact path="/"component={LmsPages}/>
            <Route path="/register"component={RegisterPage}/>
@@ -21,7 +23,8 @@ export default function AppRouter() {
            <Route path="/admin"component={LoginPage}/>
            <Route path="*"component={Error}/>
         </Switch>
-      
+        </AuthProvider>
     </Router>
+    
   );
 }
